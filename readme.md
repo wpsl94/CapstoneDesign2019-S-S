@@ -16,6 +16,16 @@
 
 ## Team member
 
+> Or Contributors/People
+
+| HeeJin Lee | HeeJu Kim | ByoungHwi Yoon | Suhyun Kim |
+| :---: | :---: | :---: | :---: |
+| <img src="https://avatars1.githubusercontent.com/u/9789023?s=460&v=4" width="50%"></img> | <img src="https://avatars2.githubusercontent.com/u/19165180?s=460&v=4" width="50%"></img> | <img src="https://avatars2.githubusercontent.com/u/48614208?s=460&v=4" width="50%"></img> | <img src="https://avatars1.githubusercontent.com/u/48614456?s=460&v=4" width="50%"></img> |
+| ![github.com/Leeheejin](https://github.com/Leeheejin "https://github.com/Leeheejin") | ![github.com/wpsl94](https://github.com/wpsl94 "https://github.com/wpsl94") | ![github.com/ByoungHwi](https://github.com/ByoungHwi "https://github.com/ByoungHwi") | ![github.com/Suhyun01](https://github.com/Suhyun01 "https://github.com/Suhyun01") |
+
+- You can see team member and github profile
+- You should probably find team member's lastest project
+
 ## Design
 
 ## Architecture
