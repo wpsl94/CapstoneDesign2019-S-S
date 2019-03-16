@@ -14,6 +14,26 @@
 
 ### Backend
 
+#### Mac OS 10.14.3 Mojave
+
+#### Java 8++ (lastest version)
+
+#### Spring Boot (lastest version)
+
+#### Git & Github Desktop
+
+#### Tomcat (lastest version)
+
+#### Gradle (lastest version)
+
+#### Slf4j
+
+#### Intellij
+
+#### Redis (lastest version)
+
+#### Google Vision API
+
 ## Team member
 
 > Or Contributors/People
