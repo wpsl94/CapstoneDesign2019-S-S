@@ -1,11 +1,10 @@
 package com.capstonedesign.backend.repository;
 
+import com.capstonedesign.backend.domain.Post;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
-
-import java.util.Set;
 
 @Repository
 public class PostRepository {
@@ -18,10 +17,10 @@ public class PostRepository {
         this.jedisPool = jedisPool;
     }
 
-    public void addImageTagAndUrlSet(String postId, Set<String> imageTagAndUrlSet) {
+    public void savePost(Post post) {
 
         try (Jedis jedis = jedisPool.getResource()) {
-            jedis.sadd("postImage::"+ postId, imageTagAndUrlSet.toArray(new String[0]));
+            jedis.zadd(post.getPid().toString(), post.getLike() + post.getCommentCount(), post.toString());
         }
     }
 }
