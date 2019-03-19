@@ -24,8 +24,17 @@ public class UserController {
     public void register(@RequestBody Account account) {
 
         BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
+
         account.setPassword(passwordEncoder.encode(account.getPassword()));
         account.setPermission("viewer");
+        account.setRegisterDate(System.currentTimeMillis());
+
         userService.createNewAccount(account);
+    }
+
+    @PostMapping(path = "/idvalidcheck")
+    public boolean idValidCheck(@RequestBody Account account) {
+
+        return userService.isAlreadyExistUserId(account);
     }
 }
