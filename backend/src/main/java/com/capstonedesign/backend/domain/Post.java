@@ -1,11 +1,15 @@
 package com.capstonedesign.backend.domain;
 
 import lombok.Data;
+import lombok.Generated;
+import org.springframework.data.annotation.Id;
 
 @Data
 public class Post {
 
-    private String pid;
+    @Id
+    @Generated
+    private Long pid;
 
     private String title;
 
@@ -16,6 +20,8 @@ public class Post {
     private String writerMid;
 
     private int like;
+
+    private int commentCount;
 
     private Comment comments;
 
