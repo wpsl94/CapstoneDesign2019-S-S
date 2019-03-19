@@ -20,7 +20,14 @@ public class UserRepository {
     public void saveAccount(Account account) {
 
         try (Jedis jedis = jedisPool.getResource()) {
-            jedis.hset(account.getId().toString(),"usermid",account.getUserMid());
+            jedis.set(account.getId().toString(), account.getUserMid());
+            jedis.sadd("User",account.getUserMid());
+        }
+    }
+
+    public boolean isExistUser(Account account) {
+        try (Jedis jedis = jedisPool.getResource()) {
+            return jedis.sismember("User",account.getUserMid());
         }
     }
 }
