@@ -23,4 +23,11 @@ public class PostRepository {
             jedis.zadd(post.getPid().toString(), post.getLike() + post.getCommentCount(), post.toString());
         }
     }
+
+    public void deletePost(Post post) {
+
+        try (Jedis jedis = jedisPool.getResource()) {
+            jedis.del(post.getPid().toString());
+        }
+    }
 }

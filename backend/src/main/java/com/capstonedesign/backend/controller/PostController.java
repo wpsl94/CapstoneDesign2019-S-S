@@ -19,9 +19,21 @@ public class PostController {
         this.postService = postService;
     }
 
-    @PostMapping(path = "/post")
+    @PostMapping(path = "/postcreate")
     public void postCreate(@RequestBody Post post) {
 
         postService.createPost(post);
+    }
+
+    @PostMapping(path = "/postedit")
+    public void postEdit(@RequestBody Post post) {
+
+        postService.editPost(post);
+    }
+
+    @PostMapping(path = "/postdelete")
+    public void postDelete(@RequestBody Post post) {
+
+        postService.deletePost(post);
     }
 }

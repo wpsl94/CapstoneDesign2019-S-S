@@ -15,4 +15,14 @@ public class PostService {
 
         postRepository.savePost(post);
     }
+
+    public void editPost(Post post) {
+
+        postRepository.savePost(post);
+    }
+
+    public void deletePost(Post post) {
+
+        postRepository.deletePost(post);
+    }
 }
