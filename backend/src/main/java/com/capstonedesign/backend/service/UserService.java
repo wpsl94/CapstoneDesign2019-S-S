@@ -15,4 +15,9 @@ public class UserService {
 
         userRepository.saveAccount(account);
     }
+
+    public boolean isAlreadyExistUserId(Account account) {
+
+        return userRepository.isExistUser(account);
+    }
 }
