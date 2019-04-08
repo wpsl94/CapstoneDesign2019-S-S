@@ -1,27 +1,41 @@
 package com.capstonedesign.backend.domain;
 
 import lombok.Data;
-import lombok.Generated;
 import org.springframework.data.annotation.Id;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import java.util.List;
+
 @Data
+@Entity
 public class Account {
 
     @Id
-    @Generated
+    @GeneratedValue(strategy= GenerationType.AUTO)
     private Long id;
 
+    @Column(nullable = false, unique = true)
+    private Long pid;
+
+    @Column(nullable = false, unique = true)
     private String userMid;
 
+    @Column(nullable = false)
     private String password;
 
-    private String email;
+    @Column(nullable = false)
+    private Integer weight;
 
-    private String gender;
+    private Integer recommendDrink;
 
-    private String phoneNumber;
+    private Integer oneDrink;
 
-    private String permission;
+    private Cup currentCup;
 
     private Long registerDate;
+
+    private List<Cup> cupList;
 }
