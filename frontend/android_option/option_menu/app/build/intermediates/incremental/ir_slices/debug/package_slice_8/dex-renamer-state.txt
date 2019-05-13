@@ -1,4 +1,0 @@
-#Tue Apr 30 23:40:53 KST 2019
-base.0=/Users/kimheeju/Documents/GitHub/option_menu/app/build/intermediates/transforms/dexMerger/debug/8
-path.0=classes.dex
-renamed.0=classes.dex
