@@ -102,13 +102,13 @@
             />
         <EditText
             android:id="@+id/water_input"
-            android:layout_width="158dp"
+            android:layout_width="100dp"
             android:layout_height="32dp"
             android:gravity="right"
             android:inputType="number"
             android:text="mL"
             android:textColorHint="#4f788d"
-            android:background="@drawable/edge2"/>
+            android:background="@drawable/edge"/>
     </LinearLayout>
 
 
@@ -116,7 +116,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_weight="2"
 
         >
 
@@ -127,7 +128,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:text="추천 권장량(몸무게 x 30 mL)은"
-            android:textSize="17dp" />
+            android:textSize="18dp" />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -140,7 +141,7 @@
                 android:layout_width="158dp"
                 android:layout_height="32dp"
                 android:layout_gravity="center"
-                android:background="@drawable/edge"
+                android:background="@drawable/edge2"
                 android:gravity="right"
                 android:text="mL"
                 android:textSize="20dp" />
@@ -150,7 +151,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="   입니다."
-                android:textSize="17dp"
+                android:textSize="18dp"
                 android:layout_gravity="center"
                 />
 
