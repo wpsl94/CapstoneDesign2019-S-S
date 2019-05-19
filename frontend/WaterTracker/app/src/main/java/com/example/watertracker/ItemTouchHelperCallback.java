@@ -38,4 +38,5 @@ public class ItemTouchHelperCallback extends ItemTouchHelper.Callback {
         Log.i(TAG, "onSwiped");
         listener.onItemRemove(viewHolder.getAdapterPosition());
     }
+
 }

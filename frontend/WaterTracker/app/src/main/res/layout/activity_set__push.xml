@@ -8,8 +8,20 @@
     android:padding="30dp"
     android:orientation="vertical"
     android:gravity="center_vertical"
+
     >
+    <TextView
+        android:layout_marginBottom="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Push Setting"
+        android:gravity="top|center_horizontal"
+        android:textColorHint="#A1E87F4D"
+        android:textSize="40dp"
+        />
+
     <LinearLayout
+        android:padding="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
@@ -32,6 +44,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
+                android:thumb="@drawable/customswitchseletor"
+                android:track="@drawable/custom_track"
                 />
 
         </LinearLayout>
@@ -45,7 +59,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_marginTop="45dp"
+        android:padding="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
@@ -76,7 +90,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_marginTop="45dp"
+        android:padding="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
@@ -91,15 +105,18 @@
                 android:layout_height="wrap_content"
                 android:text="방해 금지"
                 android:textSize="20dp"
-                android:layout_weight="7"
+                android:layout_weight="4"
+                android:layout_gravity="center_vertical"
                 />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@drawable/btn_custom2"
                 android:text="설정"
                 android:textSize="20dp"
+                android:layout_gravity="right"
                 />
 
 
@@ -114,7 +131,8 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_marginTop="45dp"
+
+        android:padding="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
@@ -137,6 +155,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
+                android:thumb="@drawable/customswitchseletor"
+                android:track="@drawable/custom_track"
                 />
         </LinearLayout>
         <View

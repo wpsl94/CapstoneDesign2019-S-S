@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Change_cup">
+    tools:context=".cupMainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,23 +14,24 @@
 
 
         <TextView
+            android:layout_margin="40dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:paddingTop="30dp"
-            android:text="컵 정보 변경 페이지"
+            android:layout_height="60dp"
+            android:hint="Cup Setting"
+            android:gravity="top|center_horizontal"
+            android:textColorHint="#A1E87F4D"
             android:textSize="40dp"
-            android:layout_marginTop="30dp"/>
+            />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             >
 
             <android.support.v7.widget.RecyclerView
-                android:id="@+id/recycler_view"
+                android:id="@+id/recycler_view1"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:background="#dddddd"
                 />
 
@@ -43,7 +44,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
             android:layout_marginBottom="52dp"
-            android:background="#7BA6B4"
+            android:background="@drawable/btn_custom"
             android:text="완료"
             android:textColor="#ffffff"
             android:textSize="20dp" />
